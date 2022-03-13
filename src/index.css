@@ -44,3 +44,11 @@ img {
 .nav__menu {
   transition: 0.2s;
 }
+
+.home__scroll-button {
+  transition: 0.3s;
+}
+
+.home__scroll-button:hover {
+  transform: translateY(0.25rem);
+}
