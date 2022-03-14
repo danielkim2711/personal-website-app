@@ -37,42 +37,42 @@ const Navbar = ({ executeScroll }) => {
         >
           <ul className='grid gap-8 grid-cols-3'>
             <li
-              className='flex flex-col items-center text-sm text-primary-color font-medium hover:text-secondary-color'
+              className='flex flex-col items-center text-sm text-primary-color font-medium hover:text-secondary-color cursor-pointer'
               onClick={onScroll}
             >
               <BiHomeAlt className='text-2xl mb-1' />
               Home
             </li>
             <li
-              className='flex flex-col items-center text-sm text-primary-color font-medium hover:text-secondary-color'
+              className='flex flex-col items-center text-sm text-primary-color font-medium hover:text-secondary-color cursor-pointer'
               onClick={onScroll}
             >
               <IoPersonOutline className='text-2xl mb-1' />
               About
             </li>
             <li
-              className='flex flex-col items-center text-sm text-primary-color font-medium hover:text-secondary-color'
+              className='flex flex-col items-center text-sm text-primary-color font-medium hover:text-secondary-color cursor-pointer'
               onClick={onScroll}
             >
               <CgFileDocument className='text-2xl mb-1' />
               Skills
             </li>
             <li
-              className='flex flex-col items-center text-sm text-primary-color font-medium hover:text-secondary-color'
+              className='flex flex-col items-center text-sm text-primary-color font-medium hover:text-secondary-color cursor-pointer'
               onClick={onScroll}
             >
               <RiSuitcaseLine className='text-2xl mb-1' />
               Services
             </li>
             <li
-              className='flex flex-col items-center text-sm text-primary-color font-medium hover:text-secondary-color'
+              className='flex flex-col items-center text-sm text-primary-color font-medium hover:text-secondary-color cursor-pointer'
               onClick={onScroll}
             >
               <IoImageOutline className='text-2xl mb-1' />
               Portfolio
             </li>
             <li
-              className='flex flex-col items-center text-sm text-primary-color font-medium hover:text-secondary-color'
+              className='flex flex-col items-center text-sm text-primary-color font-medium hover:text-secondary-color cursor-pointer'
               onClick={onScroll}
             >
               <IoMdPaperPlane className='text-2xl mb-1' />
