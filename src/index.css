@@ -52,3 +52,7 @@ img {
 .home__scroll-button:hover {
   transform: translateY(0.25rem);
 }
+
+.skills__arrow {
+  transition: 0.4s;
+}

@@ -42,7 +42,7 @@ const Home = ({ homeRef }) => {
               <img
                 src={profileImage}
                 alt='Daniel Kim'
-                className='rounded-[50%] w-[200px] h-[200px] shadow-md'
+                className='rounded-[50%] w-[200px] h-[200px] shadow-lg'
               />
             </div>
 
