@@ -8,10 +8,17 @@ import { IoMdPaperPlane } from 'react-icons/io';
 import { AiOutlineAppstore } from 'react-icons/ai';
 import { CgFileDocument } from 'react-icons/cg';
 
-const Navbar = () => {
+const Navbar = ({ executeScroll }) => {
   const [showMenu, setShowMenu] = useState(false);
 
-  const onClick = () => setShowMenu(!showMenu);
+  const onClick = () => {
+    setShowMenu(!showMenu);
+  };
+
+  const onScroll = (e) => {
+    setShowMenu(!showMenu);
+    executeScroll(e.target.textContent);
+  };
 
   return (
     <header className='w-full fixed bottom-0 left-0 z-100 bg-[#fff]'>
@@ -29,65 +36,47 @@ const Navbar = () => {
           }  left-0 w-full bg-[#fbfbfe] pt-8 px-6 pb-16 rounded-tl-3xl rounded-tr-3xl shadow-[0_-1px_4px_rgba(0,0,0,0.15)]`}
         >
           <ul className='grid gap-8 grid-cols-3'>
-            <li>
-              <Link
-                to='#home'
-                className='flex flex-col items-center text-sm text-primary-color font-medium hover:text-secondary-color'
-                onClick={onClick}
-              >
-                <BiHomeAlt className='text-2xl mb-1' />
-                Home
-              </Link>
+            <li
+              className='flex flex-col items-center text-sm text-primary-color font-medium hover:text-secondary-color'
+              onClick={onScroll}
+            >
+              <BiHomeAlt className='text-2xl mb-1' />
+              Home
             </li>
-            <li>
-              <Link
-                to='#about'
-                className='flex flex-col items-center text-sm text-primary-color font-medium hover:text-secondary-color'
-                onClick={onClick}
-              >
-                <IoPersonOutline className='text-2xl mb-1' />
-                About
-              </Link>
+            <li
+              className='flex flex-col items-center text-sm text-primary-color font-medium hover:text-secondary-color'
+              onClick={onScroll}
+            >
+              <IoPersonOutline className='text-2xl mb-1' />
+              About
             </li>
-            <li>
-              <Link
-                to='#skills'
-                className='flex flex-col items-center text-sm text-primary-color font-medium hover:text-secondary-color'
-                onClick={onClick}
-              >
-                <CgFileDocument className='text-2xl mb-1' />
-                Skills
-              </Link>
+            <li
+              className='flex flex-col items-center text-sm text-primary-color font-medium hover:text-secondary-color'
+              onClick={onScroll}
+            >
+              <CgFileDocument className='text-2xl mb-1' />
+              Skills
             </li>
-            <li>
-              <Link
-                to='#services'
-                className='flex flex-col items-center text-sm text-primary-color font-medium hover:text-secondary-color'
-                onClick={onClick}
-              >
-                <RiSuitcaseLine className='text-2xl mb-1' />
-                Services
-              </Link>
+            <li
+              className='flex flex-col items-center text-sm text-primary-color font-medium hover:text-secondary-color'
+              onClick={onScroll}
+            >
+              <RiSuitcaseLine className='text-2xl mb-1' />
+              Services
             </li>
-            <li>
-              <Link
-                to='#portfolio'
-                className='flex flex-col items-center text-sm text-primary-color font-medium hover:text-secondary-color'
-                onClick={onClick}
-              >
-                <IoImageOutline className='text-2xl mb-1' />
-                Portfolio
-              </Link>
+            <li
+              className='flex flex-col items-center text-sm text-primary-color font-medium hover:text-secondary-color'
+              onClick={onScroll}
+            >
+              <IoImageOutline className='text-2xl mb-1' />
+              Portfolio
             </li>
-            <li>
-              <Link
-                to='#contact'
-                className='flex flex-col items-center text-sm text-primary-color font-medium hover:text-secondary-color'
-                onClick={onClick}
-              >
-                <IoMdPaperPlane className='text-2xl mb-1' />
-                Contact
-              </Link>
+            <li
+              className='flex flex-col items-center text-sm text-primary-color font-medium hover:text-secondary-color'
+              onClick={onScroll}
+            >
+              <IoMdPaperPlane className='text-2xl mb-1' />
+              Contact
             </li>
           </ul>
           <IoClose

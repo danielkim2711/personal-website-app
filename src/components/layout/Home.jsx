@@ -5,10 +5,10 @@ import { AiOutlineArrowDown } from 'react-icons/ai';
 
 import profileImage from './assets/img/profile_white.png';
 
-const Home = () => {
+const Home = ({ homeRef }) => {
   return (
     <main className='main'>
-      <section className='pt-8 px-0 pb-16' id='home'>
+      <section className='pt-8 px-0 pb-16' id='home' ref={homeRef}>
         <div className='max-w-[768px] mx-6 grid gap-6' id='home__container'>
           <div
             className='grid grid-cols-[0.5fr,3fr] gap-6 pt-14 items-center'
@@ -61,7 +61,7 @@ const Home = () => {
               </p>
               <a
                 href='#contact'
-                className='inline-flex bg-slate-500 hover:bg-slate-600 text-white p-4 rounded-lg font-medium'
+                className='inline-flex bg-slate-500 hover:bg-slate-600 text-white p-5 rounded-lg font-medium'
                 id='button'
               >
                 Contact Me
