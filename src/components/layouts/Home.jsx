@@ -3,7 +3,7 @@ import { IoPaperPlaneOutline } from 'react-icons/io5';
 import { BsMouse } from 'react-icons/bs';
 import { AiOutlineArrowDown } from 'react-icons/ai';
 
-import profileImage from './assets/img/profile_white.png';
+import profileImage from '../assets/images/profile_white.png';
 
 const Home = ({ homeRef }) => {
   return (
