@@ -1,3 +1,3 @@
 # Personal Website App
 
-https://portfolio-website-danielkim2711.vercel.app/
+https://danielkim2711.vercel.app/
