@@ -2,9 +2,11 @@ import { useState } from 'react';
 
 import { BiCodeCurly } from 'react-icons/bi';
 import { FaAngleDown } from 'react-icons/fa';
+import { FiServer } from 'react-icons/fi';
 
 const Skills = ({ skillsRef }) => {
-  const [showSkills, setShowSkills] = useState(true);
+  const [showFrontendSkills, setShowFrontendSkills] = useState(true);
+  const [showBackendSkills, setShowBackendSkills] = useState(true);
 
   return (
     <section className='pt-8 px-0 pb-16' id='skills' ref={skillsRef}>
@@ -25,9 +27,9 @@ const Skills = ({ skillsRef }) => {
         <div>
           <div id='skills__content'>
             <div
-              className='flex items-center mb-6 cursor-pointer'
+              className='flex items-center mb-8 cursor-pointer'
               id='skills__header'
-              onClick={() => setShowSkills(!showSkills)}
+              onClick={() => setShowFrontendSkills(!showFrontendSkills)}
             >
               <BiCodeCurly
                 className='text-[2rem] text-primary-color mr-3'
@@ -45,14 +47,14 @@ const Skills = ({ skillsRef }) => {
 
               <FaAngleDown
                 className={`skills__arrow ${
-                  showSkills === true && '-rotate-180'
+                  showFrontendSkills === true && '-rotate-180'
                 }  ml-auto text-2xl text-primary-color`}
               />
             </div>
 
             <div
               className={
-                showSkills === true
+                showFrontendSkills === true
                   ? 'grid gap-6 pl-11 h-max mb-10'
                   : 'h-0 overflow-hidden'
               }
@@ -122,6 +124,103 @@ const Skills = ({ skillsRef }) => {
                 <div className='mb-2 text-lg' id='skills__title'>
                   <h3 className='font-medium' id='skills__name'>
                     Redux.js
+                  </h3>
+                </div>
+                <span
+                  className='block h-[5px] rounded bg-primary-color w-full'
+                  id='skills__percentage skills__html'
+                ></span>
+              </div>
+            </div>
+          </div>
+
+          <div id='skills__content'>
+            <div
+              className='flex items-center mb-8 cursor-pointer'
+              id='skills__header'
+              onClick={() => setShowBackendSkills(!showBackendSkills)}
+            >
+              <FiServer
+                className='text-[2rem] text-primary-color mr-3'
+                id='skills__icon'
+              />
+
+              <div>
+                <h1 className='text-xl font-semibold' id='skills__title'>
+                  Back End Development
+                </h1>
+                <span className='text-sm text-[#999]' id='skills__subtitle'>
+                  3 years of degree experience
+                </span>
+              </div>
+
+              <FaAngleDown
+                className={`skills__arrow ${
+                  showBackendSkills === true && '-rotate-180'
+                }  ml-auto text-2xl text-primary-color`}
+              />
+            </div>
+
+            <div
+              className={
+                showBackendSkills === true
+                  ? 'grid gap-6 pl-11 h-max mb-10'
+                  : 'h-0 overflow-hidden'
+              }
+              id='skills__list'
+            >
+              <div id='skills__data'>
+                <div className='mb-2 text-lg' id='skills__title'>
+                  <h3 className='font-medium' id='skills__name'>
+                    Node.js
+                  </h3>
+                </div>
+                <span
+                  className='block h-[5px] rounded bg-primary-color w-full'
+                  id='skills__percentage skills__html'
+                ></span>
+              </div>
+
+              <div id='skills__data'>
+                <div className='mb-2 text-lg' id='skills__title'>
+                  <h3 className='font-medium' id='skills__name'>
+                    Express.js
+                  </h3>
+                </div>
+                <span
+                  className='block h-[5px] rounded bg-primary-color w-full'
+                  id='skills__percentage skills__html'
+                ></span>
+              </div>
+
+              <div id='skills__data'>
+                <div className='mb-2 text-lg' id='skills__title'>
+                  <h3 className='font-medium' id='skills__name'>
+                    Python
+                  </h3>
+                </div>
+                <span
+                  className='block h-[5px] rounded bg-primary-color w-full'
+                  id='skills__percentage skills__html'
+                ></span>
+              </div>
+
+              <div id='skills__data'>
+                <div className='mb-2 text-lg' id='skills__title'>
+                  <h3 className='font-medium' id='skills__name'>
+                    Django
+                  </h3>
+                </div>
+                <span
+                  className='block h-[5px] rounded bg-primary-color w-full'
+                  id='skills__percentage skills__html'
+                ></span>
+              </div>
+
+              <div id='skills__data'>
+                <div className='mb-2 text-lg' id='skills__title'>
+                  <h3 className='font-medium' id='skills__name'>
+                    MongoDB
                   </h3>
                 </div>
                 <span
