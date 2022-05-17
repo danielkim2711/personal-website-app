@@ -49,7 +49,7 @@ const About = ({ aboutRef }) => {
                 className='block text-center text-xl text-primary-color font-semibold'
                 id='about__info-title'
               >
-                45+
+                50+
               </span>
               <span
                 className='block text-center text-xs text-[#6d6a7c]'
@@ -69,7 +69,7 @@ const About = ({ aboutRef }) => {
                 className='block text-center text-xs text-[#6d6a7c]'
                 id='about__info-name'
               >
-                Different job <br /> experiences
+                Years of job <br /> experiences
               </span>
             </div>
           </div>

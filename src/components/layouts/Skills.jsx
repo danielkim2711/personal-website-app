@@ -35,8 +35,8 @@ const Skills = ({ skillsRef }) => {
               />
 
               <div>
-                <h1 className='text-2xl font-semibold' id='skills__title'>
-                  Front End Developer
+                <h1 className='text-xl font-semibold' id='skills__title'>
+                  Front End Development
                 </h1>
                 <span className='text-sm text-[#999]' id='skills__subtitle'>
                   3 years of degree experience
@@ -59,95 +59,75 @@ const Skills = ({ skillsRef }) => {
               id='skills__list'
             >
               <div id='skills__data'>
-                <div
-                  className='flex justify-between mb-2 text-lg'
-                  id='skills__title'
-                >
+                <div className='mb-2 text-lg' id='skills__title'>
                   <h3 className='font-medium' id='skills__name'>
-                    HTML
+                    HTML5
                   </h3>
-                  <span className='text-[#6d6a7c]' id='skills__number'>
-                    90%
-                  </span>
                 </div>
-                <div
-                  className='h-[5px] rounded bg-secondary-color'
-                  id='skills__bar'
-                >
-                  <span
-                    className='block h-[5px] rounded bg-primary-color w-[90%]'
-                    id='skills__percentage skills__html'
-                  ></span>
-                </div>
+                <span
+                  className='block h-[5px] rounded bg-primary-color w-full'
+                  id='skills__percentage skills__html'
+                ></span>
               </div>
 
               <div id='skills__data'>
-                <div
-                  className='flex justify-between mb-2 text-lg'
-                  id='skills__title'
-                >
+                <div className='mb-2 text-lg' id='skills__title'>
                   <h3 className='font-medium' id='skills__name'>
-                    CSS
+                    CSS3
                   </h3>
-                  <span className='text-[#6d6a7c]' id='skills__number'>
-                    80%
-                  </span>
                 </div>
-                <div
-                  className='h-[5px] rounded bg-secondary-color'
-                  id='skills__bar'
-                >
-                  <span
-                    className='block h-[5px] rounded bg-primary-color w-[80%]'
-                    id='skills__percentage skills__css'
-                  ></span>
-                </div>
+                <span
+                  className='block h-[5px] rounded bg-primary-color w-full'
+                  id='skills__percentage skills__html'
+                ></span>
               </div>
 
               <div id='skills__data'>
-                <div
-                  className='flex justify-between mb-2 text-lg'
-                  id='skills__title'
-                >
+                <div className='mb-2 text-lg' id='skills__title'>
                   <h3 className='font-medium' id='skills__name'>
                     JavaScript
                   </h3>
-                  <span className='text-[#6d6a7c]' id='skills__number'>
-                    80%
-                  </span>
                 </div>
-                <div
-                  className='h-[5px] rounded bg-secondary-color'
-                  id='skills__bar'
-                >
-                  <span
-                    className='block h-[5px] rounded bg-primary-color w-[80%]'
-                    id='skills__percentage skills__js'
-                  ></span>
-                </div>
+                <span
+                  className='block h-[5px] rounded bg-primary-color w-full'
+                  id='skills__percentage skills__html'
+                ></span>
               </div>
 
               <div id='skills__data'>
-                <div
-                  className='flex justify-between mb-2 text-lg'
-                  id='skills__title'
-                >
+                <div className='mb-2 text-lg' id='skills__title'>
+                  <h3 className='font-medium' id='skills__name'>
+                    TypeScript
+                  </h3>
+                </div>
+                <span
+                  className='block h-[5px] rounded bg-primary-color w-full'
+                  id='skills__percentage skills__html'
+                ></span>
+              </div>
+
+              <div id='skills__data'>
+                <div className='mb-2 text-lg' id='skills__title'>
                   <h3 className='font-medium' id='skills__name'>
                     React.js
                   </h3>
-                  <span className='text-[#6d6a7c]' id='skills__number'>
-                    85%
-                  </span>
                 </div>
-                <div
-                  className='h-[5px] rounded bg-secondary-color'
-                  id='skills__bar'
-                >
-                  <span
-                    className='block h-[5px] rounded bg-primary-color w-[85%]'
-                    id='skills__percentage skills__react'
-                  ></span>
+                <span
+                  className='block h-[5px] rounded bg-primary-color w-full'
+                  id='skills__percentage skills__html'
+                ></span>
+              </div>
+
+              <div id='skills__data'>
+                <div className='mb-2 text-lg' id='skills__title'>
+                  <h3 className='font-medium' id='skills__name'>
+                    Redux.js
+                  </h3>
                 </div>
+                <span
+                  className='block h-[5px] rounded bg-primary-color w-full'
+                  id='skills__percentage skills__html'
+                ></span>
               </div>
             </div>
           </div>
