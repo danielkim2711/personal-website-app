@@ -1,5 +1,5 @@
-import aboutImage from '../assets/images/daniel.jpeg';
-import danielCV from '../assets/daniel_cv.pdf';
+import aboutImage from './assets/images/daniel.jpeg';
+import danielCV from './assets/daniel_cv.pdf';
 
 import { BiDownload } from 'react-icons/bi';
 

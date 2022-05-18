@@ -25,9 +25,9 @@ const Skills = ({ skillsRef }) => {
         id='skills_container'
       >
         <div>
-          <div id='skills__content'>
+          <div id='skills__content' className='mb-6'>
             <div
-              className='flex items-center mb-8 cursor-pointer'
+              className='flex items-center mb-6 cursor-pointer'
               id='skills__header'
               onClick={() => setShowFrontendSkills(!showFrontendSkills)}
             >
@@ -134,9 +134,9 @@ const Skills = ({ skillsRef }) => {
             </div>
           </div>
 
-          <div id='skills__content'>
+          <div id='skills__content' className='mb-6'>
             <div
-              className='flex items-center mb-8 cursor-pointer'
+              className='flex items-center mb-6 cursor-pointer'
               id='skills__header'
               onClick={() => setShowBackendSkills(!showBackendSkills)}
             >

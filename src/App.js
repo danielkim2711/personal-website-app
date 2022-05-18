@@ -2,9 +2,10 @@ import { useRef } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 import Navbar from './components/layouts/Navbar';
-import Home from './components/layouts/Home';
-import About from './components/layouts/About';
-import Skills from './components/layouts/Skills';
+import Home from './components/Home';
+import About from './components/About';
+import Skills from './components/Skills';
+import Qualification from './components/Qualification';
 
 function App() {
   const homeRef = useRef(null);
@@ -31,6 +32,7 @@ function App() {
       <Home homeRef={homeRef} />
       <About aboutRef={aboutRef} />
       <Skills skillsRef={skillsRef} />
+      <Qualification />
     </Router>
   );
 }
