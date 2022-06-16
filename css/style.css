@@ -2,6 +2,8 @@
   --primary-color: rgb(245, 245, 245);
   --secondary-color: rgb(220, 220, 220);
   --background-color: rgb(250, 250, 250);
+  --background-white: rgb(255, 255, 255);
+  --background-gray: rgb(170, 170, 170);
 }
 
 html {
@@ -71,7 +73,7 @@ body {
 /* About */
 
 .about {
-  background-color: #fff;
+  background-color: var(--background-white);
   min-height: 600px;
   padding: 1rem;
   display: flex;
@@ -145,4 +147,91 @@ body {
   .card {
     max-width: 50%;
   }
+}
+
+/* Project */
+
+.project {
+  min-height: 600px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project__title {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.project__card {
+  background-color: var(--background-white);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 1rem;
+  max-width: 300px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.project__card img {
+  width: 100%;
+}
+
+.project__card__title {
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.project__card__description {
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 0.5rem;
+}
+
+.project__card__icons {
+  margin-bottom: 1rem;
+}
+
+.project__card__icons p {
+  color: var(--background-gray);
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 1rem 0 0;
+}
+
+.project__card__date {
+  font-weight: 400;
+  margin: 0.5rem;
+}
+
+.project__card__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project__card__btn a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.project__card__btn button {
+  border-radius: 40px;
+  border: none;
+  margin: 1rem 0.5rem 0;
+  padding: 0.75rem 1.5rem;
+  transition: 0.25s all;
+}
+
+.project__card__btn button:hover {
+  background-color: var(--background-color);
+  cursor: pointer;
+  transform: translateY(-0.2rem);
 }
