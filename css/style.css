@@ -48,6 +48,13 @@ body {
   text-transform: uppercase;
 }
 
+.header__icons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header__icons a {
   color: inherit;
   margin: 0 5px;
@@ -308,8 +315,8 @@ body {
 
 /* Media Queries */
 
-/* Mobile */
-@media (min-width: 767px) {
+/* Tablet & Desktop */
+@media (min-width: 768px) {
   .about__items {
     flex-direction: row;
     justify-content: space-around;
