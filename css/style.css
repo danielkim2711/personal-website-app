@@ -107,10 +107,42 @@ body {
   width: 100%;
 }
 
+.polaroid.polaroid-animation {
+  animation: 1.25s fadeInFromLeft;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .card {
   border: 1px solid var(--secondary-color);
   margin: 4rem 0 1rem;
   max-width: 95%;
+}
+
+.card.card-animation {
+  animation: 1.25s fadeInFromRight;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .card__header {
