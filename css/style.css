@@ -1,5 +1,5 @@
 :root {
-  --primary-color: rgb(245, 245, 245);
+  --primary-color: rgb(240, 240, 240);
   --secondary-color: rgb(220, 220, 220);
   --background-color: rgb(250, 250, 250);
   --background-white: rgb(255, 255, 255);
@@ -35,16 +35,17 @@ body {
 }
 
 .header__title {
+  font-size: 2.25rem;
   font-weight: 500;
   margin: 0;
 }
 
 .header__text {
-  font-size: 24px;
+  font-size: 1.75rem;
   font-weight: 200;
-  letter-spacing: 1px;
-  margin: 20px 0;
-  min-height: 28px;
+  letter-spacing: 0.75px;
+  margin: 15px 0;
+  min-height: 2.15rem;
   text-transform: uppercase;
 }
 
@@ -61,9 +62,14 @@ body {
   text-decoration: none;
 }
 
+.header__icons a:hover {
+  color: var(--background-gray);
+  transition: color 0.15s;
+}
+
 .header__image {
   visibility: hidden;
-  animation: 1.5s fadeIn;
+  animation: 1.75s fadeIn;
   animation-fill-mode: forwards;
 }
 
@@ -74,6 +80,64 @@ body {
   100% {
     visibility: visible;
     opacity: 1;
+  }
+}
+
+.header__arrow--first {
+  opacity: 0;
+  position: absolute;
+  top: 175px;
+  left: 60px;
+  animation: 2s arrowAnimationFirst ease-out infinite;
+  animation-delay: 2.5s;
+}
+
+.header__arrow--second {
+  opacity: 0;
+  position: absolute;
+  top: 175px;
+  left: 60px;
+  animation: 2s arrowAnimationSecond ease-out infinite;
+  animation-delay: 2.9s;
+}
+
+.header__arrow--third {
+  opacity: 0;
+  position: absolute;
+  top: 175px;
+  left: 60px;
+  animation: 2s arrowAnimationSecond ease-out infinite;
+  animation-delay: 3.35s;
+}
+
+@keyframes arrowAnimationFirst {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  40%,
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+}
+
+@keyframes arrowAnimationSecond {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  41%,
+  100% {
+    opacity: 0;
   }
 }
 

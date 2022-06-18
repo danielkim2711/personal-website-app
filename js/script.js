@@ -9,7 +9,7 @@ function typeWriter() {
 
   const title = 'Daniel Kim';
   const text = 'Front-end developer';
-  const speed = 60;
+  const speed = 65;
 
   if (i < title.length) {
     headerTitle.textContent += title.charAt(i);
