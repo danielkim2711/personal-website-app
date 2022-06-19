@@ -27,7 +27,8 @@ body {
 /* Header */
 
 .header {
-  min-height: 100vh;
+  height: 100vh;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,7 +51,6 @@ body {
 }
 
 .header__icons {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,28 +84,28 @@ body {
 }
 
 .header__arrow--first {
+  bottom: 35px;
+  left: 49%;
   opacity: 0;
   position: absolute;
-  top: 175px;
-  left: 60px;
   animation: 2s arrowAnimationFirst ease-out infinite;
   animation-delay: 2.5s;
 }
 
 .header__arrow--second {
+  bottom: 35px;
+  left: 49%;
   opacity: 0;
   position: absolute;
-  top: 175px;
-  left: 60px;
   animation: 2s arrowAnimationSecond ease-out infinite;
   animation-delay: 2.9s;
 }
 
 .header__arrow--third {
+  bottom: 35px;
+  left: 49%;
   opacity: 0;
   position: absolute;
-  top: 175px;
-  left: 60px;
   animation: 2s arrowAnimationSecond ease-out infinite;
   animation-delay: 3.35s;
 }
@@ -332,7 +332,7 @@ body {
 .skills {
   background-color: rgb(30, 30, 30);
   min-height: 500px;
-  padding: 1rem;
+  padding: 1rem 2rem 3rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
