@@ -85,7 +85,7 @@ body {
 
 .header__arrow--first {
   bottom: 35px;
-  left: 49%;
+  left: 47%;
   opacity: 0;
   position: absolute;
   animation: 2s arrowAnimationFirst ease-out infinite;
@@ -94,7 +94,7 @@ body {
 
 .header__arrow--second {
   bottom: 35px;
-  left: 49%;
+  left: 47%;
   opacity: 0;
   position: absolute;
   animation: 2s arrowAnimationSecond ease-out infinite;
@@ -103,7 +103,7 @@ body {
 
 .header__arrow--third {
   bottom: 35px;
-  left: 49%;
+  left: 47%;
   opacity: 0;
   position: absolute;
   animation: 2s arrowAnimationSecond ease-out infinite;
@@ -381,6 +381,18 @@ body {
 
 /* Tablet & Desktop */
 @media (min-width: 768px) {
+  .header__arrow--first {
+    left: 49%;
+  }
+
+  .header__arrow--second {
+    left: 49%;
+  }
+
+  .header__arrow--third {
+    left: 49%;
+  }
+
   .about__items {
     flex-direction: row;
     justify-content: space-around;
