@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@300;400;700&family=Dosis:wght@300;400;700&display=swap');
+
 :root {
   --primary-color: rgb(240, 240, 240);
   --secondary-color: rgb(220, 220, 220);
   --background-color: rgb(250, 250, 250);
   --background-white: rgb(255, 255, 255);
   --background-gray: rgb(170, 170, 170);
+  --background-dark: rgb(40, 40, 40);
 }
 
 html {
@@ -355,7 +358,7 @@ body {
 }
 
 .skills__card {
-  background-color: rgb(40, 40, 40);
+  background-color: var(--background-dark);
   border-radius: 10px;
   color: var(--background-white);
   padding: 0.5rem 1rem;
@@ -372,9 +375,35 @@ body {
 }
 
 .skills__card__name {
+  font-family: 'Dosis', sans-serif;
   font-weight: 300;
   letter-spacing: 1px;
   margin: 0.5rem 0 0;
+}
+
+.skills__languages__container {
+  background-color: var(--background-dark);
+  border-radius: 10px;
+  color: var(--background-white);
+  margin-top: 2rem;
+  padding: 0.5rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills__languages {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.skills__languages__name {
+  font-family: 'Big Shoulders Stencil Display', cursive;
+  font-size: 1.25rem;
+  margin: 0 0.5rem 0 0;
 }
 
 /* Media Queries */
@@ -401,12 +430,21 @@ body {
   .card {
     max-width: 50%;
   }
+
+  .skills__languages__container {
+    flex-direction: row;
+    margin-top: 3rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .skills__languages {
+    margin: 0.5rem 1rem;
+  }
 }
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
   .skills__card__container {
-    margin-top: 0;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 2rem;
   }
@@ -419,7 +457,6 @@ body {
   }
 
   .skills__card__container {
-    margin-top: 0;
     grid-template-columns: repeat(7, 1fr);
     grid-gap: 3rem;
   }
