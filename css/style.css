@@ -63,11 +63,11 @@ body {
   color: inherit;
   margin: 0 5px;
   text-decoration: none;
+  transition: all 0.15s linear;
 }
 
 .header__icons a:hover {
   color: var(--background-gray);
-  transition: color 0.15s;
 }
 
 .header__image {
@@ -261,17 +261,27 @@ body {
   text-transform: uppercase;
 }
 
+.project__card__container {
+  margin-top: 1rem;
+}
+
 .project__card {
   background-color: var(--background-white);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin-top: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
   max-width: 300px;
   padding: 1rem;
+  transition: all 0.2s linear;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.project__card:hover {
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.3);
+  transform: scale(1.01);
 }
 
 .project__card img {
@@ -322,13 +332,12 @@ body {
   border: none;
   margin: 1rem 0.5rem 0;
   padding: 0.75rem 1.5rem;
-  transition: 0.25s all;
+  transition: 0.25s all linear;
 }
 
 .project__card__btn button:hover {
   background-color: var(--secondary-color);
   cursor: pointer;
-  /* transform: translateY(-0.2rem); */
 }
 
 /* Skills */
@@ -362,7 +371,7 @@ body {
   border-radius: 10px;
   color: var(--background-white);
   padding: 0.5rem 1rem;
-  transition: 0.25s all;
+  transition: 0.2s all linear;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -429,6 +438,12 @@ body {
 
   .card {
     max-width: 50%;
+  }
+
+  .project__card__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2.5rem;
   }
 
   .skills__languages__container {
