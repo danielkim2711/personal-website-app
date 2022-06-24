@@ -417,6 +417,111 @@ body {
   margin: 0 0.5rem 0 0;
 }
 
+/* Experience */
+
+.experience {
+  padding: 1rem;
+}
+
+.experience__title {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 5px;
+  margin: 0 0 0.5rem;
+  padding: 5% 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.experience__timeline {
+  width: 95%;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1170px;
+  /* border: 1px solid red; */
+}
+
+.experience__timeline::before {
+  background-color: var(--background-white);
+  content: '';
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 18px;
+  /* border: 1px solid red; */
+}
+
+.experience__timeline__item {
+  padding: 1.5rem 0;
+}
+
+.experience__timeline__icon {
+  background-color: var(--background-gray);
+  border-radius: 50%;
+  border: 5px solid var(--background-white);
+  color: var(--background-white);
+  padding: 0.5rem;
+  position: absolute;
+  top: 0;
+  left: -5px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience__timeline__icon.experience__timeline__icon--first {
+  top: 20px;
+}
+
+.experience__timeline__icon.experience__timeline__icon--second {
+  top: 220px;
+}
+
+.experience__timeline__icon.experience__timeline__icon--third {
+  top: 400px;
+}
+
+.experience__timeline__card {
+  background-color: var(--background-white);
+  border-radius: 5px;
+  box-shadow: 0 3px 0 var(--secondary-color);
+  margin-left: 4rem;
+  padding: 1rem 1rem 0 1rem;
+  position: relative;
+}
+
+.experience__timeline__card__arrow {
+  color: var(--background-white);
+  position: absolute;
+  top: 15px;
+  left: -12px;
+}
+
+.experience__timeline__card__title {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  width: 15ch;
+}
+
+.experience__timeline__card__place {
+  color: rgb(100, 100, 100);
+  margin: 0.5rem 0;
+}
+
+.experience__timeline__card__period {
+  color: rgb(130, 130, 130);
+  display: flex;
+  align-items: center;
+}
+
+.experience__timeline__card__period p {
+  margin-left: 5px;
+}
+
 /* Media Queries */
 
 /* Tablet & Desktop */
@@ -457,6 +562,10 @@ body {
   .skills__languages {
     margin: 0.5rem 1rem;
   }
+
+  .experience__timeline {
+    max-width: 60%;
+  }
 }
 
 /* Tablet */
@@ -477,4 +586,18 @@ body {
     grid-template-columns: repeat(7, 1fr);
     grid-gap: 3rem;
   }
+
+  .experience__timeline {
+    max-width: 35%;
+  }
+
+  /* .experience__timeline::before {
+    left: 50%;
+    margin-left: -2px;
+  }
+
+  .experience__timeline__icon {
+    left: 50%;
+    margin-left: -25px;
+  } */
 }
