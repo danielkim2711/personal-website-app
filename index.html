@@ -11,7 +11,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header flex--column">
       <span
         class="iconify header__image"
         data-icon="la:laptop-code"
@@ -20,7 +20,7 @@
       ></span>
       <h1 class="header__title"></h1>
       <p class="header__text"></p>
-      <div class="header__icons">
+      <div class="header__icons flex">
         <a href="https://github.com/danielkim2711" target="_blank">
           <span
             class="iconify"
@@ -78,10 +78,10 @@
     </header>
 
     <!-- About -->
-    <section class="about">
+    <section class="about flex--justify-evenly">
       <h2 class="about__title">About Me</h2>
 
-      <div class="about__items">
+      <div class="about__items flex--column">
         <div class="polaroid">
           <img src="./assets/images/profile.jpeg" alt="Avatar" />
         </div>
@@ -122,11 +122,11 @@
     </section>
 
     <!-- Project -->
-    <section class="project">
+    <section class="project flex--column">
       <h2 class="project__title">Projects</h2>
 
       <div class="project__card__container">
-        <div class="project__card">
+        <div class="project__card flex--column">
           <img src="./assets/images/project_one.png" alt="Project One" />
           <h1 class="project__card__title">Blog App</h1>
           <p class="project__card__description">
@@ -173,7 +173,7 @@
             ></span>
           </div>
           <p class="project__card__date">May 2022</p>
-          <div class="project__card__btn">
+          <div class="project__card__btn flex">
             <a
               href="https://github.com/danielkim2711/personal-blog-app"
               target="_blank"
@@ -185,7 +185,7 @@
             </a>
           </div>
         </div>
-        <div class="project__card">
+        <div class="project__card flex--column">
           <img src="./assets/images/project_two.png" alt="project two" />
           <h1 class="project__card__title">Canvas Game</h1>
           <p class="project__card__description">
@@ -213,7 +213,7 @@
             ></span>
           </div>
           <p class="project__card__date">August 2021</p>
-          <div class="project__card__btn">
+          <div class="project__card__btn flex">
             <a
               href="https://github.com/danielkim2711/canvas-game"
               target="_blank"
@@ -232,11 +232,11 @@
     </section>
 
     <!-- Skills -->
-    <section class="skills">
+    <section class="skills flex--justify-evenly">
       <h2 class="skills__title">Skills</h2>
 
       <div class="skills__card__container">
-        <div class="skills__card">
+        <div class="skills__card flex--column">
           <span
             class="iconify"
             data-icon="akar-icons:html-fill"
@@ -245,7 +245,7 @@
           ></span>
           <p class="skills__card__name">HTML5</p>
         </div>
-        <div class="skills__card">
+        <div class="skills__card flex--column">
           <span
             class="iconify"
             data-icon="akar-icons:css-fill"
@@ -254,7 +254,7 @@
           ></span>
           <p class="skills__card__name">CSS3</p>
         </div>
-        <div class="skills__card">
+        <div class="skills__card flex--column">
           <span
             class="iconify"
             data-icon="akar-icons:javascript-fill"
@@ -263,7 +263,7 @@
           ></span>
           <p class="skills__card__name">JavaScript</p>
         </div>
-        <div class="skills__card">
+        <div class="skills__card flex--column">
           <span
             class="iconify"
             data-icon="cib:typescript"
@@ -272,7 +272,7 @@
           ></span>
           <p class="skills__card__name">TypeScript</p>
         </div>
-        <div class="skills__card">
+        <div class="skills__card flex--column">
           <span
             class="iconify"
             data-icon="akar-icons:react-fill"
@@ -281,7 +281,7 @@
           ></span>
           <p class="skills__card__name">React.js</p>
         </div>
-        <div class="skills__card">
+        <div class="skills__card flex--column">
           <span
             class="iconify"
             data-icon="akar-icons:redux-fill"
@@ -290,7 +290,7 @@
           ></span>
           <p class="skills__card__name">Redux.js</p>
         </div>
-        <div class="skills__card">
+        <div class="skills__card flex--column">
           <span
             class="iconify"
             data-icon="akar-icons:node-fill"
@@ -299,7 +299,7 @@
           ></span>
           <p class="skills__card__name">Node.js</p>
         </div>
-        <div class="skills__card">
+        <div class="skills__card flex--column">
           <span
             class="iconify"
             data-icon="simple-icons:express"
@@ -308,7 +308,7 @@
           ></span>
           <p class="skills__card__name">Express.js</p>
         </div>
-        <div class="skills__card">
+        <div class="skills__card flex--column">
           <span
             class="iconify"
             data-icon="bxl:mongodb"
@@ -317,7 +317,7 @@
           ></span>
           <p class="skills__card__name">MongoDB</p>
         </div>
-        <div class="skills__card">
+        <div class="skills__card flex--column">
           <span
             class="iconify"
             data-icon="akar-icons:python-fill"
@@ -326,7 +326,7 @@
           ></span>
           <p class="skills__card__name">Python</p>
         </div>
-        <div class="skills__card">
+        <div class="skills__card flex--column">
           <span
             class="iconify"
             data-icon="akar-icons:django-fill"
@@ -335,7 +335,7 @@
           ></span>
           <p class="skills__card__name">Django</p>
         </div>
-        <div class="skills__card">
+        <div class="skills__card flex--column">
           <span
             class="iconify"
             data-icon="cib:java"
@@ -344,7 +344,7 @@
           ></span>
           <p class="skills__card__name">Java</p>
         </div>
-        <div class="skills__card">
+        <div class="skills__card flex--column">
           <span
             class="iconify"
             data-icon="bi:git"
@@ -353,7 +353,7 @@
           ></span>
           <p class="skills__card__name">Git</p>
         </div>
-        <div class="skills__card">
+        <div class="skills__card flex--column">
           <span
             class="iconify"
             data-icon="akar-icons:github-fill"
@@ -364,8 +364,8 @@
         </div>
       </div>
 
-      <div class="skills__languages__container">
-        <div class="skills__languages">
+      <div class="skills__languages__container flex--column">
+        <div class="skills__languages flex">
           <p class="skills__languages__name">I speak English</p>
           <span
             class="iconify"
@@ -374,7 +374,7 @@
             data-height="23"
           ></span>
         </div>
-        <div class="skills__languages">
+        <div class="skills__languages flex">
           <p class="skills__languages__name">I speak Korean</p>
           <span
             class="iconify"
@@ -393,7 +393,7 @@
       <div class="experience__timeline">
         <div class="experience__timeline__item">
           <div
-            class="experience__timeline__icon experience__timeline__icon--first"
+            class="experience__timeline__icon experience__timeline__icon--first flex"
           >
             <span
               class="iconify"
@@ -413,7 +413,7 @@
             <p class="experience__timeline__card__place">
               Unitec Institute of Technology
             </p>
-            <div class="experience__timeline__card__period">
+            <div class="experience__timeline__card__period flex">
               <span class="iconify" data-icon="bx:calendar"></span>
               <p>2017 - Jul 2022</p>
             </div>
@@ -421,7 +421,7 @@
         </div>
         <div class="experience__timeline__item">
           <div
-            class="experience__timeline__icon experience__timeline__icon--second"
+            class="experience__timeline__icon experience__timeline__icon--second flex"
           >
             <span
               class="iconify"
@@ -441,7 +441,7 @@
             <p class="experience__timeline__card__place">
               Jet Cleaning Services
             </p>
-            <div class="experience__timeline__card__period">
+            <div class="experience__timeline__card__period flex">
               <span class="iconify" data-icon="bx:calendar"></span>
               <p>Dec 2017 - Jun 2022</p>
             </div>
@@ -449,7 +449,7 @@
         </div>
         <div class="experience__timeline__item">
           <div
-            class="experience__timeline__icon experience__timeline__icon--third"
+            class="experience__timeline__icon experience__timeline__icon--third flex"
           >
             <span
               class="iconify"
@@ -463,7 +463,7 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="flex--column">
       <a
         href="https://github.com/danielkim2711/personal-website-app"
         target="_blank"
