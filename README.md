@@ -1,3 +1,1 @@
-# Personal Website App
-
-https://danielkim2711.vercel.app/
+# Personal Website with plain HTML, CSS and vanilla JavaScript
