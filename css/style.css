@@ -534,7 +534,7 @@ footer {
   .project__card__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2.5rem;
+    column-gap: 2.5rem;
   }
 
   .skills__languages__container {
