@@ -442,15 +442,15 @@ body {
 }
 
 .experience__timeline__icon.experience__timeline__icon--first {
-  top: 20px;
+  top: 5%;
 }
 
 .experience__timeline__icon.experience__timeline__icon--second {
-  top: 220px;
+  top: 52%;
 }
 
 .experience__timeline__icon.experience__timeline__icon--third {
-  top: 400px;
+  top: 95%;
 }
 
 .experience__timeline__card {
