@@ -394,7 +394,7 @@ body {
 
 .experience {
   margin-bottom: 4rem;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .experience__title {
@@ -458,6 +458,7 @@ body {
   border-radius: 5px;
   box-shadow: 0 3px 0 var(--secondary-color);
   margin-left: 4rem;
+  max-width: 300px;
   padding: 1rem 0 0 1rem;
   position: relative;
 }
