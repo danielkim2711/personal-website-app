@@ -458,7 +458,7 @@ body {
   border-radius: 5px;
   box-shadow: 0 3px 0 var(--secondary-color);
   margin-left: 4rem;
-  padding: 1rem 1rem 0 1rem;
+  padding: 1rem 0 0 1rem;
   position: relative;
 }
 
