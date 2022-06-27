@@ -506,6 +506,10 @@ footer {
 
 /* Tablet & Desktop */
 @media (min-width: 768px) {
+  .header {
+    height: 100vh;
+  }
+
   .header__arrow--first {
     left: 49%;
   }
@@ -558,10 +562,6 @@ footer {
 
 /* Desktop */
 @media (min-width: 1024px) {
-  .header {
-    height: 100vh;
-  }
-
   .skills {
     min-height: 450px;
   }
