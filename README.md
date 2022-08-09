@@ -13,11 +13,7 @@ This website is fully responsible to any screen sizes.
 <h3>:star: Design Inspirations</h3>
 
 <a href="https://dorota1997.github.io/react-frontend-dev-portfolio">Davina Griss</a>
-
 <br/>
-
 <a href="https://pedroklepa.com">Pedro Klepa</a>
-
 <br/>
-
 <a href="https://sultanbadri.github.io">Sultan Badri</a>
