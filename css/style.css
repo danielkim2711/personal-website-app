@@ -574,14 +574,4 @@ footer {
   .experience__timeline {
     max-width: 35%;
   }
-
-  /* .experience__timeline::before {
-    left: 50%;
-    margin-left: -2px;
-  }
-
-  .experience__timeline__icon {
-    left: 50%;
-    margin-left: -25px;
-  } */
 }
