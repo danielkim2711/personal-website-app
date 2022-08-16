@@ -8,7 +8,7 @@ function typeWriter() {
   const headerText = document.querySelector('.header__text');
 
   const title = 'Daniel Kim';
-  const text = 'Front-end developer';
+  const text = 'Front End Engineer';
   const speed = 65;
 
   if (i < title.length) {
