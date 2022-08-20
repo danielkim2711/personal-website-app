@@ -111,6 +111,56 @@ body {
   visibility: hidden;
 }
 
+/* Hamburger Menu */
+
+.hamburger {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  z-index: 10;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background: none;
+  border: none;
+}
+
+.hamburger__top,
+.hamburger__middle,
+.hamburger__bottom {
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background: #000;
+  transition: all 0.5s;
+}
+
+.hamburger__middle {
+  transform: translateY(7px);
+}
+
+.hamburger__bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+}
+
+.open .hamburger__top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger__middle {
+  display: none;
+}
+
+.open .hamburger__bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
 /* About */
 
 .about {
@@ -528,6 +578,10 @@ footer {
     100% {
       opacity: 0;
     }
+  }
+
+  .hamburger {
+    display: none;
   }
 
   .about__items {

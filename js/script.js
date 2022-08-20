@@ -54,3 +54,8 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 observer.observe(document.querySelector('.about__items'));
+
+// Hamburger Menu
+const btn = document.getElementById('menu-btn');
+
+btn.addEventListener('click', () => btn.classList.toggle('open'));
