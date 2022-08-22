@@ -55,7 +55,22 @@ const observer = new IntersectionObserver((entries) => {
 
 observer.observe(document.querySelector('.about__items'));
 
-// Hamburger Menu
+// Mobile Menu
 const btn = document.getElementById('menu-btn');
+const overlay = document.getElementById('overlay');
+const menu = document.getElementById('mobile-menu');
 
-btn.addEventListener('click', () => btn.classList.toggle('open'));
+const sectionLinks = document.getElementById('section-links');
+const linksArr = Array.from(sectionLinks.children);
+
+function navToggle() {
+  btn.classList.toggle('open');
+  overlay.classList.toggle('overlay-show');
+  document.body.classList.toggle('stop-scrolling');
+  menu.classList.toggle('show-menu');
+}
+
+btn.addEventListener('click', navToggle);
+linksArr.forEach((link) =>
+  link.firstElementChild.addEventListener('click', navToggle)
+);
