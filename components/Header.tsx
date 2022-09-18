@@ -39,7 +39,7 @@ const Header = (props: Props) => {
           fgColor='gray'
           bgColor='transparent'
           target='_blank'
-          label='My personal blog'
+          label='my blog'
         />
       </motion.div>
 
