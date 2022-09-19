@@ -1,6 +1,6 @@
 # Portfolio Website
 
-<img width="80%" src="/static/preview.png" alt="portfolio website" />
+<img width="80%" src="./public/static/preview.png" alt="portfolio website" />
 
 <br />
 
