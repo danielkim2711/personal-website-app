@@ -17,6 +17,9 @@ const Skills = (props: Props) => {
         whileInView={{
           opacity: 1,
         }}
+        viewport={{
+          once: true,
+        }}
         className='relative min-h-[1300px] flex justify-center items-center text-center md:min-h-screen'
       >
         <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
