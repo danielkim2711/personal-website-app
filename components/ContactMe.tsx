@@ -12,8 +12,18 @@ type Props = {};
 
 const ContactMe = (props: Props) => {
   const { register, handleSubmit } = useForm<Inputs>();
-  const onSubmit: SubmitHandler<Inputs> = (formData) =>
-    (window.location.href = `mailto:danielkim2711@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`);
+  const onSubmit: SubmitHandler<Inputs> = (formData) => {
+    if (
+      !formData.name ||
+      !formData.email ||
+      !formData.subject ||
+      !formData.message
+    ) {
+      alert('Please fill out missing fields');
+    } else {
+      window.location.href = `mailto:danielkim2711@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`;
+    }
+  };
 
   return (
     <section id='contact' className='snap-start'>
