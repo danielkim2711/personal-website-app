@@ -21,7 +21,7 @@ const ExperienceCard = ({
   descriptions,
 }: Props) => {
   return (
-    <article className='flex flex-col items-center rounded-lg space-y-7 flex-shrink-0 w-[300px] snap-center bg-[#292929] opacity-40 hover:opacity-100 cursor-pointer transition-opacity duration-200 p-10 md:w-[700px] lg:w-[800px]'>
+    <article className='flex flex-col items-center rounded-lg space-y-7 flex-shrink-0 w-[300px] h-[700px] snap-center bg-[#292929] opacity-40 hover:opacity-100 cursor-pointer transition-opacity duration-200 p-10 md:w-[700px] lg:w-[800px]'>
       <motion.div
         initial={{
           y: -100,

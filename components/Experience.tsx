@@ -22,7 +22,7 @@ const Experience = (props: Props) => {
         whileInView={{
           opacity: 1,
         }}
-        className='relative min-h-[1050px] flex flex-col justify-evenly items-center text-left overflow-hidden max-w-full px-10 mx-auto md:flex-row'
+        className='relative min-h-[1100px] flex flex-col justify-evenly items-center text-left overflow-hidden max-w-full px-10 mx-auto md:flex-row'
       >
         <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
           Experience

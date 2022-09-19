@@ -46,9 +46,7 @@ const About = (props: Props) => {
           className='space-y-10 px-0 md:px-10 lg:px-20'
         >
           <h4 className='text-2xl font-semibold md:text-4xl'>
-            Here is a{' '}
-            <span className='underline decoration-[#F7AB0A]/50'>little</span>{' '}
-            background
+            Who <span className='underline decoration-[#F7AB0A]/50'>am</span> I?
           </h4>
           <p className='text-sm md:text-base'>
             Kia ora! I am a CS graduate at Unitec Institute of Technology in New

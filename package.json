@@ -17,6 +17,7 @@
     "react-social-icons": "^5.14.0"
   },
   "devDependencies": {
+    "@iconify/react": "^4.0.0",
     "@types/node": "18.7.18",
     "@types/react": "18.0.20",
     "@types/react-dom": "18.0.6",

@@ -5,10 +5,11 @@ import Header from '../components/Header';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Experience from '../components/Experience';
+import Skills from '../components/Skills';
 
 const Home: NextPage = () => {
   return (
-    <div className='bg-[#242424] text-white h-screen snap-y snap-mandatory overflow-scroll z-0'>
+    <div className='bg-[#242424] text-white h-screen snap-y snap-mandatory overflow-scroll z-0 scroll-smooth'>
       <Head>
         <title>Daniel Kim | Front End Engineer</title>
       </Head>
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
       <Hero />
       <About />
       <Experience />
+      <Skills />
     </div>
   );
 };
