@@ -31,7 +31,7 @@ const Experience = (props: Props) => {
           Experience
         </h3>
 
-        <div className='w-full flex items-center space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory'>
+        <div className='w-full flex items-center space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80'>
           <ExperienceCard
             src='/static/jet-cleaning-logo.jpeg'
             alt='jet cleaning logo'
