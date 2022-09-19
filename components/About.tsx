@@ -5,7 +5,7 @@ type Props = {};
 const About = (props: Props) => {
   return (
     <section id='about' className='h-screen snap-center'>
-      <div className='min-h-[900px] flex flex-col relative text-center max-w-7xl px-10 justify-center mx-auto items-center md:min-h-full md:flex-row md:text-left'>
+      <div className='relative min-h-[850px] flex flex-col justify-center items-center text-center max-w-7xl px-10 mx-auto md:min-h-full md:flex-row md:text-left'>
         <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
           About
         </h3>
@@ -25,7 +25,7 @@ const About = (props: Props) => {
           viewport={{
             once: true,
           }}
-          className='w-56 h-56 mb-20 flex-shrink-0 rounded-full object-cover md:mb-0 md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[500px]'
+          className='w-56 h-56 mb-10 flex-shrink-0 rounded-full object-cover md:mb-0 md:rounded-lg md:w-64 md:h-95 2xl:w-[500px] 2xl:h-[500px]'
           src='/static/about-image.jpeg'
           alt='my portrait'
         />
@@ -43,7 +43,7 @@ const About = (props: Props) => {
           viewport={{
             once: true,
           }}
-          className='space-y-10 px-0 md:px-10'
+          className='space-y-10 px-0 md:px-10 lg:px-20'
         >
           <h4 className='text-2xl font-semibold md:text-4xl'>
             Here is a{' '}
