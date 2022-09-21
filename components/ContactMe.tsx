@@ -26,7 +26,7 @@ const ContactMe = (props: Props) => {
   };
 
   return (
-    <section id='contact' className='snap-start'>
+    <section id='contact' className='snap-center'>
       <div className='relative min-h-[1000px] flex justify-center items-center text-center lg:min-h-[1000px]'>
         <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
           Contact
