@@ -15,6 +15,6 @@ export const unitecDescriptions = [
   'ASP.NET and C# for the back-end',
   'PostgreSQL for the database',
   'AWS Elastic Beanstalk for hosting',
-  'Agile methodology with the Kanban framework',
+  'Agile methodology with Kanban framework',
   'Awarded the Top Software Project',
 ];
