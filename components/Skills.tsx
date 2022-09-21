@@ -26,7 +26,7 @@ const Skills = (props: Props) => {
           Skills
         </h3>
 
-        <div className='grid grid-cols-2 gap-10 md:grid-cols-4 lg:grid-cols-7'>
+        <div className='grid grid-cols-2 gap-10 md:grid-cols-4 lg:grid-cols-7 lg:gap-5 lg:px-10 xl:gap-10 xl:px-0'>
           <Skill iconUrl='akar-icons:html-fill' text='HTML5' />
           <Skill iconUrl='akar-icons:css-fill' text='CSS3' />
           <Skill iconUrl='akar-icons:sass-fill' text='Sass' />
