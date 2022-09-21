@@ -1,13 +1,12 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { BsFillArrowUpCircleFill } from 'react-icons/bs';
 
 type Props = {};
 
 const Footer = (props: Props) => {
   return (
     <Link href='#hero'>
-      <footer className='sticky bottom-5 w-full cursor-pointer'>
+      <footer className='sticky bottom-5 w-full cursor-pointer z-20'>
         <div className='flex justify-center items-center'>
           <Image
             src='/static/about-image.jpeg'
