@@ -14,7 +14,7 @@ const Home: NextPage = () => {
   return (
     <div className='bg-[#242424] text-white h-screen snap-y snap-mandatory overflow-x-hidden overflow-y-scroll z-0 scroll-smooth scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80'>
       <Head>
-        <title>Daniel Kim | Front End Engineer</title>
+        <title>Daniel Kim | Full Stack Engineer</title>
       </Head>
 
       <Header />
