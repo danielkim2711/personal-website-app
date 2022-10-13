@@ -8,7 +8,7 @@ type Props = {};
 
 const Hero = (props: Props) => {
   const [text] = useTypewriter({
-    words: ["Kia ora, I'm Daniel", 'Front End Engineer'],
+    words: ["Kia ora, I'm Daniel", 'Full Stack Engineer'],
     loop: true,
     delaySpeed: 2000,
   });
@@ -26,7 +26,7 @@ const Hero = (props: Props) => {
         />
         <div className='z-20'>
           <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[10px] md:tracking-[15px]'>
-            Front End Engineer
+            Full Stack Engineer
           </h2>
           <h1 className='text-3xl font-semibold px-10 md:text-6xl'>
             <span className='mr-3'>{text}</span>
