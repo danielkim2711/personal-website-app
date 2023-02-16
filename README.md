@@ -1,9 +1,5 @@
 # Portfolio Website
 
-<img width="80%" src="./public/static/preview.png" alt="portfolio website" />
-
-<br />
-
 ## How to run this application
 
 Please clone this repository and run these commands:
