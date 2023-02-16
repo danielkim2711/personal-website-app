@@ -19,7 +19,7 @@ const Hero = (props: Props) => {
         <BackgroundCircle />
         <Image
           className='relative rounded-full mx-auto object-cover'
-          src='/static/hero-image.jpeg'
+          src='/static/hero-image.jpg'
           alt='my portrait'
           width={128}
           height={128}
